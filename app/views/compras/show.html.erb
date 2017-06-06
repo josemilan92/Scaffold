@@ -15,5 +15,7 @@
   <%= @compra.cliente %>
 </p>
 
-<%= link_to 'Edit', edit_compra_path(@compra) %> |
-<%= link_to 'Back', compras_path %>
+<%= link_to 'Edit', edit_compra_path(@compra),
+class: 'button primary'%> |
+<%= link_to 'Back', compras_path,
+class: 'button radius success'%>

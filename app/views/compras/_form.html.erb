@@ -13,20 +13,23 @@
 
   <div class="field">
     <%= form.label :fecha %>
-    <%= form.date_select :fecha, id: :compra_fecha %>
+    <%= form.date_select :fecha, id: :compra_fecha,
+    class: 'large-12 columns'%>
   </div>
 
   <div class="field">
     <%= form.label :monto %>
-    <%= form.number_field :monto, id: :compra_monto %>
+    <%= form.number_field :monto, id: :compra_monto,
+    title:'Precio'%>
   </div>
 
   <div class="field">
     <%= form.label :cliente %>
-    <%= form.text_area :cliente, id: :compra_cliente %>
+    <%= form.text_area :cliente, id: :compra_cliente,
+    title:'Tu nombre', data:{tooltip: true}%>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit class:'button success'%>
   </div>
 <% end %>
